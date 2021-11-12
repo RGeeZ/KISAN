@@ -47,6 +47,7 @@ kisanRegister.methods.generateAuthToken=async function(){
 kisanRegister.pre("save",async function(next){
     if(this.isModified("password")){
         this.password=await bcrypt.hash(this.password,10);
+        this.confirm_password=this.password;
      //   this.confirm_password=await bcrypt.hash(this.confirm_password,10);
         console.log(this.password);
         console.log(this.confirm_password);
