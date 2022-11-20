@@ -1,10 +1,7 @@
-const mongoose=require("mongoose");
-mongoose.connect("mongodb://localhost:27017/newkisan",{
-    useNewUrlParser:true,
-    useUnifiedTopology:true,
-   // useCreateIndex:true
-}).then(()=>{
-    console.log("Connected");
-}).catch((e)=>{
-    console.log(e);
-})
+// const mongoose = require("mongoose");
+// mongoose.connect("mongodb://0.0.0.0:27017/newkisan", {
+// }).then(() => {
+//     console.log("Connected");
+// }).catch((e) => {
+//     console.log(e);
+// })
