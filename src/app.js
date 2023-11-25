@@ -1,4 +1,4 @@
-require('dotenv').config();
+//require('dotenv').config(); keep it commented if you need to run this on local or small project will be available soon for production level.
 const express=require("express");
 const path=require("path");
 const {json}=require("express");
@@ -105,4 +105,6 @@ app.get("/request",(req,res)=>{
 app.listen(port,function(req,res){
    console.log(`${port}`);
 });
+
+
 
